@@ -1,7 +1,12 @@
 # About NCOVI-FETCH
-NCOVI-FETCH is a command-line system information tool written in Python . NCOVI-FETCH displays information about NCOVI statistics in Vietnam(currently).
-If you make some change and 
-![image](https://user-images.githubusercontent.com/33241024/117637183-c5251d80-b1ab-11eb-8c0c-42b5c281f746.png)
+NCOVI-FETCH is a command-line system information tool written in Python . NCOVI-FETCH displays information about NCOVI statistics in Vietnam(currently), summary over the world and other specific country (option).
+![image](https://user-images.githubusercontent.com/33241024/117861171-5636ea00-b2bb-11eb-97b0-acb18bb5326f.png)
+
+## How to use
+![image](https://user-images.githubusercontent.com/33241024/117861270-72d32200-b2bb-11eb-91c2-cac886c121ae.png)
+Easy to use. Just type in `"ncovi-fetch"`, you will get the data about Vietnam and WorldWide summary
+ - Use `ncovi-fetch -c "country name"` to get statitics of other more country. The other country can be search with `--search (-s)` parameter
+![image](https://user-images.githubusercontent.com/33241024/117861667-de1cf400-b2bb-11eb-8aa7-91f47ec17a3e.png)
 
 ## Windows Install 
 The executable for windows is prebuild in "dist" folder. Just go ahead, change directory to this folder and run ncovi-fetch from command line or [add_the_directory_path_to_PATH_environment].
