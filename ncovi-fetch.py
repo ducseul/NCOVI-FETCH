@@ -80,9 +80,6 @@ def renderFetch(data, pattern_id, other_country_data, global_data):
     global_data = GlobalCasesSummary(global_data)
     other_country_data = CountryStatitics(other_country_data)
 
-    print(global_data)
-    # print(other_country_data)
-
     if(pattern_id == 0):
         print(output[pattern_id].format(data.infected, data.recovered, data.dead, data.updateTime,
         global_data.confirmed, global_data.recoverd, global_data.deaths, "null"))
@@ -111,8 +108,6 @@ class CommandLine:
         other_country_data = []
         global_data = []
 
-            
-            # print("You have used '-c' or '--country' with argument: {0}".format(argument.country))
         if argument.search:
             render_pattern = 2
             tmp = ww_data["globalCasesToday"]
@@ -133,16 +128,8 @@ class CommandLine:
             
         global_data = ww_data["globalCasesSummary"]
         vn_data = getVietNam()
-        print(other_country_data)
-        print(global_data)
         renderFetch(vn_data, render_pattern, other_country_data, global_data)
 
 
 if __name__ == "__main__":
     app = CommandLine()
-  
-    # ww_data = crawlWorldWide()
-    # print(GlobalCasesSummary(ww_data["globalCasesSummary"]))
-
-    # print(ww_data["globalCasesToday"][0])
-    # initFetch(vn_data)
