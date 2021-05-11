@@ -3,7 +3,19 @@ NCOVI-FETCH is a command-line system information tool written in Python . NCOVI-
 ![image](https://user-images.githubusercontent.com/33241024/117861171-5636ea00-b2bb-11eb-97b0-acb18bb5326f.png)
 
 ## How to use
-![image](https://user-images.githubusercontent.com/33241024/117861270-72d32200-b2bb-11eb-91c2-cac886c121ae.png)  
+>>>
+usage: ncovi-fetch [-h] [-c COUNTRY] [-s SEARCH]
+
+Description for my NCOVI-FETCH
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c COUNTRY, --country COUNTRY
+                        Other country statitics. Example: --c 'Papua New Guinea'
+  -s SEARCH, --search SEARCH
+                        Search country name. Example: -s 'unite'
+                        
+>>>
 Easy to use. Just type in `"ncovi-fetch"`, you will get the data about Vietnam and WorldWide summary
  - Use `ncovi-fetch -c "country name"` to get statitics of other more country. The other country can be search with `--search (-s)` parameter
 ![image](https://user-images.githubusercontent.com/33241024/117861667-de1cf400-b2bb-11eb-8aa7-91f47ec17a3e.png)
