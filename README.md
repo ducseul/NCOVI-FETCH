@@ -27,11 +27,9 @@ The executable for windows is prebuild in "dist" folder. Just go ahead, change d
 Unforutnally, I don't have an linux machine around, so do compiling yourself and put the executable file to $HOME/bin folder
 
 ## Compile yourself
-First, install pyinstaller using one of below
- - Using pip to install Pyinstaller by: `"pip install pyinstaller"` (notice that using pip/pip3)
- - Using pip to install from my requirements.txt file: `"pip install -r requirements.txt"`  
+First, install pyinstaller using pip to install from my requirements.txt file: `"pip install -r requirements.txt"`  
 
-Second, compile the code to executable using: `"pyinstaller --onefile ncovi-fetch.py"`
+Second, compile the code to executable using: `"pyinstaller --onefile ncovi-fetch.py"`  
 Finally: Make the folder to PATH environment(Windows) or copy the executable file to the bin folder (Linux)
 
 
