@@ -77,20 +77,23 @@ def renderFetch(data, pattern_id, other_country_data, global_data):
 
     output.append('List of country')
 
-    global_data = GlobalCasesSummary(global_data)
-    other_country_data = CountryStatitics(other_country_data)
-
     if(pattern_id == 0):
+        global_data = GlobalCasesSummary(global_data)
+        other_country_data = CountryStatitics(other_country_data)
         print(output[pattern_id].format(data.infected, data.recovered, data.dead, data.updateTime,
         global_data.confirmed, global_data.recoverd, global_data.deaths, "null"))
+
     elif (pattern_id == 1):
+        global_data = GlobalCasesSummary(global_data)
+        other_country_data = CountryStatitics(other_country_data)
         print(output[pattern_id].format(data.infected, data.recovered, data.dead, data.updateTime,
         global_data.confirmed, global_data.recoverd, global_data.deaths, "null",
         other_country_data.country.upper(), other_country_data.totalCase, other_country_data.newCases, 
         other_country_data.totalRecovered,  "null", other_country_data.totalDeaths, other_country_data.newDeaths))
         pass
+
     elif (pattern_id == 2):
-        print(output[pattern_id], global_data)
+        print(output[pattern_id], other_country_data)
     
 
 
